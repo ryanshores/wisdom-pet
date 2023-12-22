@@ -15,21 +15,21 @@ import java.time.LocalDateTime;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class PostDto {
     private Long id;
-    private String title;
+    private String author;
     private String body;
     private LocalDateTime createdAt;
     private LocalDateTime modifiedAt;
-    private String author;
+    private String title;
 
     @Override
     public String toString() {
         return "Post{" +
                 "id=" + id +
-                ", title='" + title + "'" +
+                ", author='" + author + "'" +
                 ", body='" + body + "'" +
                 ", createdAt='" + createdAt + "'" +
                 ", modifiedAt='" + modifiedAt + "'" +
-                ", author='" + author + "'" +
+                ", title='" + title + "'" +
                 "}";
     }
 }
